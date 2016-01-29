@@ -1,18 +1,66 @@
-.snoopycontainer {
+/*.snoopycontainer {
   position: relative;
 
 }
 
 .snoopyimg {
-  position: relative;
+  position: relative;*/
 
--webkit-animation-name: ride;
+/*-webkit-animation-name: ride;
 -webkit-animation-duration: 2s;
 -webkit-animation-timing-function: ease-in;
 -webkit-animation-iteration-count: 1;
 }
 
 @-webkit-keyframes ride {
-  from{-webkit-transform: translateX(0px);}
+  from{-webkit-transform: translateY(-0px);}
+  to{-webkit-transform: translateY(1000px);}
+}*/
+.petals1 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: brown;
+/*-webkit-animation-fill-mode: forward;*/
+-webkit-animation-name: ride;
+-webkit-animation-duration: 15s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes ride {
+  0%{-webkit-transform: translate(-50px,-200px) rotate(80deg);}
+  /*50%{-webkit-transform: translate(150px,100px) rotate(40deg);}*/
+  100%{-webkit-transform: translate(200px, 600px) ;}
+}
+
+#foot2 {
+  position: relative;
+
+-webkit-animation-name: foot;
+-webkit-animation-duration: 10s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes foot {
+  from{-webkit-transform: translateX(-0px);}
+  to{-webkit-transform: translateX(1000px);}
+}
+
+#foot {
+  position: relative;
+
+-webkit-animation-name: foot;
+-webkit-animation-duration: 10s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes foot {
+  from{-webkit-transform: translateX(-0px);}
   to{-webkit-transform: translateX(1000px);}
 }
